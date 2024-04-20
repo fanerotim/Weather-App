@@ -6,3 +6,9 @@ export const currentWeather = (city) => {
         .then(res => res.json())
         .then(result => console.log(result));
 }
+
+export const forecast = (city) => {
+    fetch(`${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}`)
+        .then(res => res.json())
+        .then(result => console.log(result))
+}
