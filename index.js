@@ -19,8 +19,6 @@ form.addEventListener('submit', (e) => {
     provideData(cityInput);
 })
 
-
-
     
 
 
