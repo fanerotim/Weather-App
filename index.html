@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/index.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
+
 <body>
 
-    <form action='' method="get">
-        <label for="cityInput">Choose City</label><br>
-        <input type="text" id="cityInput" name="cityInput">
-        <button>Check Weather</button>
-    </form>
-    
-    <h1 id="city"></h1>
+    <section class="container">
 
 
-    <ul class="hour">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+        <form class="user-form" action='' method="get">
+            <label for="cityInput">Choose City</label><br>
+            <input type="text" placeholder="Search..." value="Plovdiv" id="cityInput" name="cityInput" autocomplete="off">
+            <br>
+            <button>Check Weather</button>
+
+            <h1 class="temperature"></h1>
+            <h2 class="wind"></h2>
+
+            <ul class="next-days">
+                <p>The Next Days Forecast</p>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </form>
+
+        <h1 class="date-time">asd</h1>
+        <h1 class="condition">Some</h1>
+
+        <ul class="hourly-forecast">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </section>
+
 </body>
+
 </html>
