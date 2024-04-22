@@ -1,0 +1,78 @@
+/* RESET STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(101, 129, 165);
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* END OF RESET STYLES */
+
+/* CONTAINER STYLES */
+.container {
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr, 1fr);
+    grid-template-rows: repeat(2, 2fr, 1fr);
+
+    border: 1px solid orange;  
+}
+
+/* END OF CONTAINER STYLES */
+
+/* FORM STYLES */
+.user-form {
+    grid-column: 3 / 4;
+    padding: 3rem;
+}
+
+.temperature {
+    font-size: 3rem;
+    padding: 1.5rem 0;
+}
+
+.next-days {
+    list-style-type: none;
+}
+
+/* END OF FORM STYLES */
+
+.date-time {
+    grid-row: 1/2;
+    grid-column: 1 / 2;
+    font-size: 2rem;
+    justify-self: end;
+    align-self: start;
+}
+
+.condition {
+    grid-row: 1 / 2;
+    grid-column: 1/ 2;
+
+    font-size: 4rem;
+    justify-self: end;
+    align-self: end;
+    color: rgb(255, 255, 255);
+}
+
+/* HOURLY FORECAST STYLES */
+.hourly-forecast {
+    grid-row: 2 / 3;
+    list-style-type: none;
+    
+    display: flex;
+    padding: 2rem 0;
+}
+
+/* END OF HOURLY FORECAST STYLES */
