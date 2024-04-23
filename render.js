@@ -1,8 +1,8 @@
 //renders data
 export function renderData(forecast, current) {
 
-    let hourlyForecast = forecast.forecast.forecastday[0].hour;
-    let hourUl = document.querySelector('.hourly-forecast');
+    // let hourlyForecast = forecast.forecast.forecastday[0].hour;
+    // let hourUl = document.querySelector('.hourly-forecast');
 
     // CONDITION
     let condition = document.querySelector('.condition');
@@ -20,7 +20,7 @@ export function renderData(forecast, current) {
     let wind = document.querySelector('.wind');
     wind.textContent = `${current.current.wind_kph} km/h`
 
-    for (let i = 0; i < hourUl.children.length; i++) {
-        hourUl.children[i].textContent = `${hourlyForecast[i].time} - ${hourlyForecast[i].temp_c}c`
-    }
+    // for (let i = 0; i < hourUl.children.length; i++) {
+    //     hourUl.children[i].textContent = `${hourlyForecast[i].time} - ${hourlyForecast[i].temp_c}c`
+    // }
 }

@@ -27,6 +27,7 @@ body {
     grid-template-rows: repeat(2, 2fr, 1fr);
 
     border: 1px solid orange;  
+    border-radius: 1rem;
 }
 
 /* END OF CONTAINER STYLES */
@@ -73,6 +74,7 @@ body {
     
     display: flex;
     padding: 2rem 0;
+    border-top: 1px solid black;
 }
 
 /* END OF HOURLY FORECAST STYLES */
