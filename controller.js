@@ -1,5 +1,6 @@
 import * as httpService from "./service.js"
 import { renderData } from "./render.js";
+import { imageFinder } from "./utils/imageFinder.js";
 
 import {hourlyTemp} from "./views/hourlyTemperature.js"
 
@@ -15,5 +16,8 @@ export const provideData = async (cityInput) => {
     let nextHoursForecast = hourlyForecast
     .filter((date, i) => date.time > currentTime && i % 2 === 1)
 
-    hourlyTemp(nextHoursForecast.slice(0, 6))
+    const conditions = imageFinder(nextHoursForecast.slice(0, 6));
+
+    console.log('conditions', conditions)
+    hourlyTemp(nextHoursForecast.slice(0, 6), conditions)
 }
