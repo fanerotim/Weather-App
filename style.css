@@ -75,6 +75,46 @@ body {
     display: flex;
     padding: 2rem 0;
     border-top: 1px solid black;
+
+    justify-content: space-around;
+}
+
+.hourly-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+ 
+    /* flex-basis: 4rem; */
+    background-color:rgb(71, 71, 71, .4);
+    border-radius: .5rem;
+}
+
+.hourly-card p {
+    font-size: .8rem;
+    padding: .2rem 0;
+    text-align: center;
+    color: white;
+}
+
+.hourly-time {
+    border-bottom: 1px solid rgb(150, 142, 142);
+    width: 50%;
+    margin-top: .5rem;
+}
+
+.hourly-temp {
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.hourly-card img {
+    width: 50%;
+    background-color: rgba(92, 92, 92, 0.6);
+    border-radius: .5rem;
+    margin-top: .5rem;
+    padding: .3rem;
 }
 
 /* END OF HOURLY FORECAST STYLES */
