@@ -9,7 +9,7 @@ export function hourlyTemp(nextHoursForecast, conditions) {
                 ${data.time.split(' ')[1]}
             </p>
 
-            <img src="./assets/day/${conditions[i]}.png" alt="">
+            <img src="./assets/day/${conditions[i].trim()}.png" alt="">
 
             <p class="hourly-temp">
                 ${data.temp_c}°C
