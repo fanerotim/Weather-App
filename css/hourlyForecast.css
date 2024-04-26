@@ -1,6 +1,7 @@
 /* HOURLY FORECAST STYLES */
 .hourly-forecast {
     grid-row: 2 / 3;
+    grid-column: 1 / 2;
     list-style-type: none;
     
     display: flex;
@@ -8,6 +9,7 @@
     border-top: 1px solid black;
 
     justify-content: space-around;
+    align-items: end;
     gap: .2rem;
 }
 
