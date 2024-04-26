@@ -22,10 +22,13 @@
             <label for="cityInput">Choose City</label><br>
             <input type="text" placeholder="Search..." value="Plovdiv" id="cityInput" name="cityInput" autocomplete="off">
             <br>
-            <button>Check Weather</button>
+            <button class="btn">Check Weather</button>
 
-            <h1 class="temperature"></h1>
-            <h2 class="wind"></h2>
+            <section class="temp-and-wind">
+                <h1 class="temperature"></h1>
+                <h2 class="wind"></h2>
+            </section>
+            
 
             <ul class="next-days">
                 <p>The Next Days Forecast</p>
@@ -35,7 +38,11 @@
             </ul>
         </form>
 
-        <h1 class="date-time"></h1>
+        <section class="date-time">
+            <p class="date"></p>
+            <span class="delimiter">|</span>
+            <p class="time"></p>
+        </section>
         <h1 class="condition"></h1>
 
         <ul class="hourly-forecast">
