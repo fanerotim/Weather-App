@@ -1,0 +1,16 @@
+/* FORM STYLES */
+.user-form {
+    grid-column: 3 / 4;
+    padding: 3rem;
+}
+
+.temperature {
+    font-size: 3rem;
+    padding: 1.5rem 0;
+}
+
+.next-days {
+    list-style-type: none;
+}
+
+/* END OF FORM STYLES */

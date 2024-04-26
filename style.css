@@ -1,3 +1,6 @@
+@import url('./css/hourlyForecast.css');
+@import url('./css/form.css');
+
 /* RESET STYLES */
 
 * {
@@ -6,6 +9,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
 }
+
+/* END OF RESET STYLES */
 
 body {
     background-color: rgb(101, 129, 165);
@@ -17,7 +22,7 @@ body {
     align-items: center;
 }
 
-/* END OF RESET STYLES */
+
 
 /* CONTAINER STYLES */
 .container {
@@ -33,22 +38,7 @@ body {
 
 /* END OF CONTAINER STYLES */
 
-/* FORM STYLES */
-.user-form {
-    grid-column: 3 / 4;
-    padding: 3rem;
-}
 
-.temperature {
-    font-size: 3rem;
-    padding: 1.5rem 0;
-}
-
-.next-days {
-    list-style-type: none;
-}
-
-/* END OF FORM STYLES */
 
 .date-time {
     grid-row: 1/2;
@@ -68,55 +58,3 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/* HOURLY FORECAST STYLES */
-.hourly-forecast {
-    grid-row: 2 / 3;
-    list-style-type: none;
-    
-    display: flex;
-    padding: 2rem .5rem;
-    border-top: 1px solid black;
-
-    justify-content: space-around;
-    gap: .2rem;
-}
-
-.hourly-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
- 
-    /* flex-basis: 4rem; */
-    background-color:rgb(71, 71, 71, .4);
-    border-radius: .5rem;
-}
-
-.hourly-card p {
-    font-size: .8rem;
-    padding: .2rem 0;
-    text-align: center;
-    color: white;
-}
-
-.hourly-time {
-    border-bottom: 1px solid rgb(150, 142, 142);
-    width: 50%;
-    margin-top: .5rem;
-}
-
-.hourly-temp {
-    margin-bottom: .5rem;
-    font-weight: 700;
-}
-
-.hourly-card img {
-    width: 50%;
-    background-color: rgba(92, 92, 92, 0.6);
-    border-radius: .5rem;
-    margin-top: .5rem;
-    padding: .3rem;
-}
-
-/* END OF HOURLY FORECAST STYLES */
