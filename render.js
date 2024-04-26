@@ -9,8 +9,14 @@ export function renderData(forecast, current) {
     condition.textContent = current.current.condition.text;
     
     // DATE-TIME
-    let dateTime = document.querySelector('.date-time');
-    dateTime.textContent = current.location.localtime;
+    const dateEl = document.querySelector('.date');
+    const date = new Date(current.location.localtime).toUTCString().replace('GMT', '').substring(0, 17)
+    
+    const timeEl = document.querySelector('.time');
+    const time = current.location.localtime.split(' ')[1];
+    
+    dateEl.textContent = date;
+    timeEl.textContent = time;
 
     //TEMPERATURE
     let tempetarure = document.querySelector('.temperature');
