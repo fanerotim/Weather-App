@@ -25,6 +25,6 @@ export function userForm(forecast, windDirection) {
     `
 
     const formTemplateView = formTemplate();
-    const containerUl = document.querySelector('.user-form');
+    const containerUl = document.querySelector('.container');
     render(formTemplateView, containerUl);
 }
