@@ -1,9 +1,8 @@
 import {html, render} from "../node_modules/lit-html/lit-html.js";
 
 export function userForm(forecast, windDirection) {
-    console.log('user form', forecast, windDirection)
+    console.log('forecast from user-form', forecast)
     const formTemplate = () => html `
-        <form class="user-form" action='' method="get">
             <label for="cityInput">Choose City</label><br>
             <input type="text" placeholder="Search..." value="Plovdiv" id="cityInput" name="cityInput" autocomplete="off">
             <br>
@@ -20,11 +19,9 @@ export function userForm(forecast, windDirection) {
                 <li></li>
                 <li></li>
                 <li></li>
-            </ul>
-        </form>
-    `
+            </ul>`
 
     const formTemplateView = formTemplate();
-    const containerUl = document.querySelector('.container');
+    const containerUl = document.querySelector('.user-form');
     render(formTemplateView, containerUl);
 }

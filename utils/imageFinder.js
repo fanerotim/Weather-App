@@ -1,5 +1,4 @@
 export const imageFinder = (nextHoursForecast) => {
-    console.log(nextHoursForecast);
 
     let condition;
     let conditions = [];
