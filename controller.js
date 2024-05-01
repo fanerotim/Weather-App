@@ -2,6 +2,7 @@ import * as httpService from "./service.js"
 import { renderData } from "./render.js";
 import { imageFinder } from "./utils/imageFinder.js";
 import { windFinder } from "./utils/windFinder.js";
+import { backgroundImageProvider } from "./utils/backgroundImageProvider.js";
 
 import {hourlyTemp} from "./views/hourlyTemperature.js"
 import { userForm } from "./views/userForm.js";
@@ -11,7 +12,7 @@ export const provideData = async (cityInput) => {
     const current = await httpService.getCurrentWeather(cityInput);
 
     renderData(forecast, current);
-
+    backgroundImageProvider(current);
 
     // HOURLY TEMPERATURE FEATURE CODE BELOW
     // getting the forecast only for the next hours (excluding prior hours)
