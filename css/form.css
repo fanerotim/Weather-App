@@ -23,12 +23,18 @@
     width: 8rem;
 }
 
+.user-form label {
+    padding-bottom: 1rem;
+    color: white;
+}
+
 .btn {
     padding: .3rem .6rem;
     margin-top: .5rem;
     border: none;
     border-radius: .5rem;
     cursor: pointer;
+    font-size: .7rem;
 }
 
 .temp-and-wind {
@@ -46,11 +52,23 @@
 
 .wind {
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.wind-direction {
+    display: block;
+    color: rgb(201, 201, 201);
+    font-size: .7rem;
 }
 
 .next-days {
     list-style-type: none;
+}
+
+.next-days p {
+    padding: 1.5rem 0;
+    text-align: center;
 }
 
 /* END OF FORM STYLES */

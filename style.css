@@ -13,7 +13,7 @@
 /* END OF RESET STYLES */
 
 body {
-    background-color: rgb(101, 129, 165);
+    background-color: rgb(58, 58, 58);
 
     width: 100vw;
     height: 100vh;
@@ -31,7 +31,7 @@ body {
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 3fr 1fr;
 
-    border: 1px solid orange;  
+    /* border: 1px solid orange;   */
     border-radius: 1rem;
 }
 
