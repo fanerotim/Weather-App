@@ -1,7 +1,6 @@
 import {html, render} from "../node_modules/lit-html/lit-html.js";
 
 export function userForm(forecast, windDirection) {
-    console.log('forecast from user-form', forecast)
     const formTemplate = () => html `
             <label for="cityInput">Location</label><br>
             <input type="text" placeholder="Search..." value="Plovdiv" id="cityInput" name="cityInput" autocomplete="off">
