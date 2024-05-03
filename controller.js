@@ -18,9 +18,15 @@ export const provideData = async (cityInput) => {
     // getting the forecast only for the next hours (excluding prior hours)
     const currentTime = forecast.current.last_updated;
     const hourlyForecast = forecast.forecast.forecastday[0].hour;
-
+    
     let nextHoursForecast = hourlyForecast
-    .filter((date, i) => date.time > currentTime && i % 2 === 1)
+    .filter((date, i) => date.time >= currentTime)
+
+    // as the API returns weather up to 23:00, I need to get next day forecast and add it to the 'nextHoursForecast' to avoid showing weather up to 23:00 only 
+    if (nextHoursForecast.length < 6) {
+        let nextDayForecast = forecast.forecast.forecastday[1].hour
+        nextDayForecast.map(forecast => nextHoursForecast.push(forecast))
+    }
 
     //returns an array of weather conditions as string
     const conditions = imageFinder(nextHoursForecast.slice(0, 6));
