@@ -22,7 +22,7 @@
     height: fit-content;
  
     /* flex-basis: 4rem; */
-    background-color:rgb(71, 71, 71, .4);
+    background-color:rgba(69, 95, 107, 0.7);
     border-radius: .5rem;
 }
 
@@ -46,7 +46,7 @@
 
 .hourly-card img {
     width: 50%;
-    background-color: rgba(92, 92, 92, 0.6);
+    background-color: rgba(36, 36, 36, 0.8);
     border-radius: .5rem;
     margin-top: .5rem;
     padding: .3rem;
