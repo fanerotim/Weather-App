@@ -9,6 +9,7 @@ import { userForm } from "./views/userForm.js";
 
 export const provideData = async (cityInput) => {
     const forecast = await httpService.getForecast(cityInput);
+    console.log(forecast);
     const current = await httpService.getCurrentWeather(cityInput);
 
     renderData(forecast, current);

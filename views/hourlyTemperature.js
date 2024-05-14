@@ -2,6 +2,7 @@ import { html, render } from "../node_modules/lit-html/lit-html.js"
 
 
 export function hourlyTemp(nextHoursForecast, conditions) {
+    console.log(conditions)
     const hourlyTemplate = () => html`
     ${nextHoursForecast.map((data, i) => html`
         <section class="hourly-card">
