@@ -68,10 +68,14 @@
     list-style-type: none;
 }
 
-.next-days p {
+.next-days .heading {
     padding: 1.5rem 0;
     text-align: center;
     color: rgb(243, 243, 243);
+}
+
+.next-days-data {
+    display: flex;
 }
 
 /* END OF FORM STYLES */
