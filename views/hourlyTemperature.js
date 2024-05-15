@@ -2,7 +2,6 @@ import { html, render } from "../node_modules/lit-html/lit-html.js"
 
 
 export function hourlyTemp(nextHoursForecast, conditions) {
-    console.log(conditions)
     const hourlyTemplate = () => html`
     ${nextHoursForecast.map((data, i) => html`
         <section class="hourly-card">
@@ -10,7 +9,7 @@ export function hourlyTemp(nextHoursForecast, conditions) {
                 ${data.time.split(' ')[1]}
             </p>
 
-            <img src="./assets/day/${conditions[i].trim()}.png" alt="">
+            <img src="./assets/day/${conditions[i]}.png" alt="">
 
             <p class="hourly-temp">
                 ${data.temp_c}°C

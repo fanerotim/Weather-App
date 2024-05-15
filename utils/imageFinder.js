@@ -4,7 +4,7 @@ export const imageFinder = (nextHoursForecast) => {
     let conditions = [];
 
     for (let i = 0; i < nextHoursForecast.length; i++) {
-        condition = nextHoursForecast[i].condition.text;
+        condition = nextHoursForecast[i].condition.text.trim();
         conditions.push(condition)
     }
 
