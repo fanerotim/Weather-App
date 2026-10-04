@@ -18,22 +18,9 @@ provideData(cityInput)
 //attaching an event listener to the form to get the user input
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     const formData = new FormData(form);
     cityInput = Object.fromEntries(formData).cityInput;
 
     provideData(cityInput);
-})
-
-
-
-
-
-
-
-
-    
-
-
-
-
+});
