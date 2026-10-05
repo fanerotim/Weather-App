@@ -1,3 +1,9 @@
+/* CONTAINER STYLES */
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* HOURLY FORECAST STYLES */
 .hourly-forecast {
     grid-row: 2 / 3;
