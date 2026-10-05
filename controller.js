@@ -38,7 +38,7 @@ export const provideData = async (cityInput) => {
         userForm(forecast, windDirection);
     } catch (error) {
         console.error(error);
-        // TODO: Show error message to the user
+        // TODO: Show error message to the user. Create a new view to display the error message.
         throw error; // TODO: do not throw the error as it will not be handled in index.js, handle it here.
     }
 }
