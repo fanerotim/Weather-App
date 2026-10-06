@@ -1,8 +1,8 @@
-import {html, render} from "../node_modules/lit-html/lit-html.js";
+import { html, render } from "../node_modules/lit-html/lit-html.js";
 
 export function userForm(forecast, windDirection) {
-    console.log('user-form', forecast)
-    const formTemplate = () => html `
+
+    const formTemplate = () => html`
             <label for="cityInput">Location</label><br>
             <input type="text" placeholder="Search..." value="Plovdiv" id="cityInput" name="cityInput" autocomplete="off">
             <br>
@@ -18,7 +18,7 @@ export function userForm(forecast, windDirection) {
             <ul class="next-days">
                 <p class="heading">Next 3 Days Forecast</p>
                 
-                ${forecast.forecast.forecastday.map(data => html `
+                ${forecast.forecast.forecastday.map(data => html`
         
                 <section class="next-days-data">
                     <img class="weather-img" src="../assets/day/${data.day.condition.text.trim()}.png">

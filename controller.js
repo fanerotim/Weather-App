@@ -37,8 +37,8 @@ export const provideData = async (cityInput) => {
         const windDirection = windFinder(forecast);
         userForm(forecast, windDirection);
     } catch (error) {
-        console.error(error);
+        console.log(error, 'this is the data of the new error that I am throwing')
+        console.error(error, 'this error is caught in the catch block inside controller.js');
         // TODO: Show error message to the user. Create a new view to display the error message.
-        throw error; // TODO: do not throw the error as it will not be handled in index.js, handle it here.
     }
 }
