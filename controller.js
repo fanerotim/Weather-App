@@ -5,6 +5,7 @@ import { windFinder } from "./utils/windFinder.js";
 import { backgroundImageProvider } from "./utils/backgroundImageProvider.js";
 import { hourlyTemp } from "./views/hourlyTemperature.js"
 import { userForm } from "./views/userForm.js";
+import { errorView } from "./views/errorView.js";
 import { WEATHER_CARD_COUNT } from "./constants.js";
 
 export const provideData = async (cityInput) => {
@@ -36,9 +37,10 @@ export const provideData = async (cityInput) => {
         //returns the direction of the wind as string
         const windDirection = windFinder(forecast);
         userForm(forecast, windDirection);
+        errorView('');
     } catch (error) {
-        console.log(error, 'this is the data of the new error that I am throwing')
-        console.error(error, 'this error is caught in the catch block inside controller.js');
-        // TODO: Show error message to the user. Create a new view to display the error message.
+        console.error(error);
+        // TODO: consider adding a timer to remove toast automatically
+        errorView(error.message);
     }
 }
