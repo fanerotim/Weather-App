@@ -24,13 +24,13 @@ export function userForm(forecast, windDirection) {
                     <img class="weather-img" src="../assets/day/${data.day.condition.text.trim()}.png">
 
                     <div class="date-and-condition">
-                        <p>${data.date}</p>
-                        <p>${data.day.condition.text}</p>
+                        <p class="date-and-condition--date">${data.date}</p>
+                        <p class="date-and-condition--condition">${data.day.condition.text}</p>
                     </div>
 
                     <div class="max-and-min-temp">
-                        <p>${data.day.maxtemp_c}</p>
-                        <p>${data.day.mintemp_c}</p>
+                        <p class="max-and-min-temp--max">${data.day.maxtemp_c}</p>
+                        <p class="max-and-min-temp--min">${data.day.mintemp_c}</p>
                     </div>
 
                 </section>`)}

@@ -14,7 +14,7 @@
 /* END OF RESET STYLES */
 
 body {
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(255, 245, 245);
 
     width: 100vw;
     height: 100vh;
@@ -33,7 +33,7 @@ body {
     grid-template-rows: 3fr 1fr;
 
     /* border: 1px solid orange;   */
-    border-radius: 1rem;
+    border-radius: .1rem;
     background-color: rgb(172, 172, 172);
     background-blend-mode: multiply;
 }
@@ -45,7 +45,7 @@ body {
 .date-time {
     grid-row: 1/2;
     grid-column: 1 / 2;
-    font-size: 1.2rem;
+    font-size: .8rem;
     justify-self: end;
     align-self: start;
     padding-right: 2rem;
