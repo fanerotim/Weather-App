@@ -28,12 +28,12 @@
     height: fit-content;
  
     /* flex-basis: 4rem; */
-    background-color:rgba(69, 95, 107, 0.7);
-    border-radius: .5rem;
+    background-color:rgba(18, 22, 23, 0.5);
+    border-radius: .1rem;
 }
 
 .hourly-card p {
-    font-size: .8rem;
+    font-size: .7rem;
     padding: .2rem 0;
     text-align: center;
     color: white;
@@ -52,7 +52,7 @@
 
 .hourly-card img {
     width: 50%;
-    background-color: rgba(36, 36, 36, 0.8);
+    /* background-color: rgba(36, 36, 36, 0.8); */
     border-radius: .5rem;
     margin-top: .5rem;
     padding: .3rem;

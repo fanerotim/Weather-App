@@ -13,7 +13,7 @@
     flex-direction: column;
 
     justify-content: start;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .user-form input {
@@ -77,12 +77,19 @@
 
 .next-days-data {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: .5rem;
+}
+
+/* this ensures colum aligns if text-length in each col differs */
+/* for example: if we have: sunny and patchy rain nearby they will not be aligned evenly as sunny is way shorter than other condition, so i need to make sure there is some baseline width*/
+.date-and-condition {
+    min-width: 120px;
 }
 
 .max-and-min-temp--max,
 .max-and-min-temp--min {
+    font-size: .8rem;
     color: rgb(173, 173, 173);
 }
 
@@ -101,10 +108,12 @@
 }
 
 .date-and-condition--date {
+    font-size: .75rem;
     color: rgb(239, 239, 239);
 }
 
 .date-and-condition--condition {
+    font-size: .8rem;
     color: rgb(166, 166, 166);
     margin-top: .15rem;
 }
@@ -117,7 +126,7 @@
 /* END OF FORM STYLES */
 
 /* SMALL SCREEN STYLES */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .date-and-condition,
     .max-and-min-temp {
         font-size: .7rem;
